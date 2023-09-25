@@ -1,0 +1,148 @@
+:root {
+    
+
+    /*Primary*/
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    
+  
+    /*Neutral*/
+    --Darkgray: hsl(0, 0%, 59%);
+
+
+
+    /*Typo 400-700*/
+    --typo: 'Kumbh Sans', sans-serif;
+}
+
+
+
+/*Global*/
+html {
+    font-size: 62.5%;   
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+   
+}
+
+body {
+    font-family: var(--typo);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/images/bg-pattern-top.svg) 123% 412% no-repeat,url(/assets/images/bg-pattern-bottom.svg) no-repeat -22% -264%;
+    background-color: var(--Darkcyan);
+}
+
+@media (min-width: 1440px){ 
+    body{
+        background: url(/assets/images/bg-pattern-top.svg) -62% 412% no-repeat,url(/assets/images/bg-pattern-bottom.svg) no-repeat 161% -306%;
+        background-color: var(--Darkcyan);
+    }
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Utilities*/
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+
+
+
+
+/*Header*/
+
+
+.header{
+    height: 15rem;
+    background: url(/assets/images/bg-pattern-card.svg);
+    border-top-right-radius: 0.9rem;
+    border-top-left-radius: 0.9rem;
+    
+      
+}
+
+.header__container{
+    
+    width: 12.5rem;
+    height: 12rem;
+    margin: 0 auto;
+    position: relative;
+    top: 9.5rem;
+    border: 0.7rem solid white;
+    border-radius: 100%;
+    background: url(/assets/images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+/*main*/
+
+.main{
+    margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    border-bottom: .1rem solid #e8e8e9
+}
+
+.main__name{
+    font-weight: 700;
+}
+
+.main__span{
+    color: var(--Darkgray);
+    font-weight: 400;
+}
+
+.main__city{
+    color: var(--Darkgray);
+}
+
+/*Footer*/
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+    background-color: white;
+    
+}
+
+.footer__span{
+    font-weight: 700
+}
+
+.footer__text{
+    font-size: 1.2rem;
+    color: var(--Darkgray);
+}
+
+.footer__stat{
+ 
+  text-align: center;
+}
